@@ -1,0 +1,23 @@
+.form-container {
+    border: 1px solid #000;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.form-field {
+    margin-bottom: 12px;
+}
+
+.form-btn {
+    margin: 0 auto;
+    padding: 4px;
+}
+
+.form-error {
+    color: rgb(238, 9, 9);
+    font-size: 12px;
+}

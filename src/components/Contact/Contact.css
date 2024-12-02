@@ -1,0 +1,24 @@
+.contact-container {
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.icon {
+    padding-right: 4px;
+}
+
+.contact-delete {
+    margin: 12px 0;
+    cursor: pointer;
+}

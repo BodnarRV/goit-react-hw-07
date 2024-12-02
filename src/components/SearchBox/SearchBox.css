@@ -1,0 +1,10 @@
+.search-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.search-input {
+    max-width: 200px;
+}
