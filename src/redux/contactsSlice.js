@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { addContact, deleteContact, fetchContacts } from "./contactsOps";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 
@@ -57,3 +57,11 @@ const contactsSlice = createSlice({
 
 export default contactsSlice.reducer;
 export const selectContacts = (state) => state.contacts.items;
+
+export const selectFilteredContacts = createSelector(
+  [selectContacts, (state) => state.filters.name],
+  (contacts, nameFilter) =>
+    contacts.filter((contact) =>
+      contact.name.toLowerCase().includes(nameFilter.toLowerCase())
+    )
+);
